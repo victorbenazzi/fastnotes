@@ -17,6 +17,8 @@ export function Editor() {
       },
     },
     content: getSavedContentFromLocalStorage(),
+    autofocus: true,
+    editable: true,
   });
 
   function getSavedContentFromLocalStorage() {
