@@ -13,7 +13,7 @@ export function Editor() {
     },
     editorProps: {
       attributes: {
-        class: "outline-none",
+        class: "p-4 outline-none prose prose-sky",
       },
     },
     content: getSavedContentFromLocalStorage(),
@@ -26,10 +26,7 @@ export function Editor() {
 
   return (
     <>
-      <EditorContent
-        className="max-w-[700px] mx-auto pt-16 prose prose-sky"
-        editor={editor}
-      />
+      <EditorContent className="pt-8" editor={editor} />
 
       {editor && (
         <BubbleMenu
